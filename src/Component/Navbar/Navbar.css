@@ -1,0 +1,11 @@
+.navbarBg {
+    background-color: rgb(34, 34, 186);
+    height: 10vh;
+    width: 100%;
+}
+
+.navbarBox {
+    margin: auto;
+    width: 90%;
+    background: rgb(205, 151, 151);
+}
