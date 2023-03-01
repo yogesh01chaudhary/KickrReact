@@ -11,6 +11,7 @@ export default function SearchModal(props) {
         <div className='navSearchBox'>
         <div className="NavSearchModal">
             <input type="text" className='SearchInputNav'></input>
+            <i className="fa-solid fa-magnifying-glass SearchInputIcon"></i>
         </div>
     </div>
     ):(

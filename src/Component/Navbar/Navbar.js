@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Navbar.css"
 import Logo from "../../Assests/KickrWhiteLogo.png"
 import SearchModal from './SearchModal'
+import SideNav from './SideNav'
 
 export default function Navbar() {
 
@@ -15,7 +16,7 @@ export default function Navbar() {
         {name:"ERP CRM Development"},
         {name:"Chatbot Development"},
         {name:"Marketing & Solution"},
-        {name:"UI/UX Design,"}
+        {name:"UI/UX Design"}
     ]},
     {name:"Company",
     SubName:[
@@ -47,11 +48,17 @@ export default function Navbar() {
     ]
 
     const [modalIsOpen, setIsOpen] = useState(false);
+    const [sideNav, setSideNav] = useState(false);
+
+    
     const handleSearch=()=>{
         setIsOpen(true);
     }
     const handleClose=()=>{
         setIsOpen(false);
+    }
+    const handleSideNav=()=>{
+        setSideNav(true);
     }
 
   return (
@@ -107,16 +114,27 @@ export default function Navbar() {
 
                 <div className="NavIcons" style={{width:"20%"}}>
                     {modalIsOpen==true?(
-                        <i onClick={()=>handleClose()} >X</i>
+                        <i className="fa-solid fa-xmark closeMark" onClick={()=>handleClose()}></i>
                     ):(
                         <i className="fa-solid fa-magnifying-glass" onClick={()=>handleSearch()}></i>
                     )}
-                    <i className="fa-solid fa-cart-shopping"></i>
+                    <div className='cartIcon'>
+                    <i className="fa-solid fa-cart-shopping "></i>
+                    <div className='cartMenuBox'>
+                        <div className='CartDataBox'>
+
+                        </div>
+                    </div>
+                    </div> 
                 </div>
+            </div>
+            <div className='MenuIcon'>
+                <i className="fa-solid fa-bars" onClick={()=>handleSideNav()}></i>
             </div>
         </div>
 
         <SearchModal val={modalIsOpen}></SearchModal>
+        <SideNav val={sideNav} fun={setSideNav} data={NavMenu}></SideNav>
     </>
   )
 }
