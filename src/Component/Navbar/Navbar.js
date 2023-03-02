@@ -10,6 +10,7 @@ export default function Navbar() {
 
     const NavMenu=[
     {name:"Services",
+    coll:"one",
     SubName:[
         {name:"Web Designing"},
         {name:"App Development"},
@@ -21,6 +22,7 @@ export default function Navbar() {
         {name:"UI/UX Design"}
     ]},
     {name:"Company",
+    coll:"two",
     SubName:[
         {name:"About"},
         {name:"Our Team"},
@@ -28,6 +30,7 @@ export default function Navbar() {
         {name:"Contact Us"}
     ]},
     {name:"3D Products",
+    coll:"three",
     SubName:[
         {name:"Game Assests"},
         {name:"Interior Design"},
@@ -35,6 +38,7 @@ export default function Navbar() {
         {name:"Alpha / Texture"}
     ]},
     {name:"Our Apps",
+    coll:"four",
     SubName:[
         {name:"Android Apps"},
         {name:"iOS Apps"},
@@ -42,6 +46,7 @@ export default function Navbar() {
         {name:"Mobile Apps"}
     ]},
     {name:"Policy",
+    coll:"five",
     SubName:[
         {name:"Privacy Policy"},
         {name:"Refund/Return Policy"},
@@ -51,8 +56,6 @@ export default function Navbar() {
 
     const [modalIsOpen, setIsOpen] = useState(false);
     const [sideNav, setSideNav] = useState(false);
-
-    
     const handleSearch=()=>{
         setIsOpen(true);
     }

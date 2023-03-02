@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import kickrlogo from "../../Assests/KickrWhiteLogo.png";
 import Gallery1 from "../../Assests/Gallery1.jpg";
 import card from '../../Assests/payment Card.png'
-import "./footer.css";
+import "./Footer.css";
 import AOS from "aos";
 const Footer = () => {
 
@@ -56,7 +56,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/">
-                <i class="fa-brands fa-android footerIcon"></i>
+                <i className="fa-brands fa-android footerIcon"></i>
                   <span>App Development</span>
                 </a>
               </li>
@@ -86,7 +86,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/">
-                <i class="fa-solid fa-bezier-curve footerIcon"></i>
+                <i className="fa-solid fa-bezier-curve footerIcon"></i>
                   <span> UI/UX Design</span>
                 </a>
               </li>
