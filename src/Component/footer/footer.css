@@ -16,9 +16,11 @@ h5.footerHeading {
     text-align: left;
     color: #FFF;
     margin-bottom: 30px;
+    font-family: 'Red Hat Text', sans-serif;
 }
 p.kickrdesc {
     font-size: 13px;
+    font-family: 'Red Hat Text', sans-serif;
     color: #fff;
     text-align: left;
     font-weight: 400;
@@ -41,11 +43,13 @@ ul.serviceList li >span{
     font-size: 12px;
     font-weight: 400;
     color: #fff;
+    font-family: 'Red Hat Text', sans-serif;
 }
 ul.serviceList li a{
     text-decoration: none;
     color: #fff;
     font-size: 13px;
+    font-family: 'Red Hat Text', sans-serif;
 }
 ul.serviceList li a:hover{
 text-decoration: underline;
@@ -146,6 +150,7 @@ color: #fff;
 p.copyRight {
     font-size: 15px;
     font-weight: 400;
+    font-family: 'Red Hat Text', sans-serif;
     color: #acebff;
 }
 ul.menuItems {
@@ -156,6 +161,7 @@ ul.menuItems {
 li.menuList {
     font-size: 15px;
     list-style: none;
+    font-family: 'Red Hat Text', sans-serif;
     color: #acebff;
     border-right: 2px solid #acebff;
     /* padding: 3px; */

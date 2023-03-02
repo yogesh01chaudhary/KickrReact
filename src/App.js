@@ -9,6 +9,7 @@ import { BrowserRouter,Routes, Route } from 'react-router-dom';
 //--------------------------------Pages--------------------------------------//
 import Navbar from './Component/Navbar/Navbar';
 import Footer from './Component/footer/Footer';
+import GetStart from './Component/getStart/GetStart';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Navbar/>}></Route>
           
         </Routes>
+        <GetStart />
         <Footer />
       </BrowserRouter>
       
