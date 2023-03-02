@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.BannerBG {
+    background-image: url("../Assests/HomeBanner.png");
+    height: 120vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.homeBannerImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BannerImage {
+    width: 70%;
+    height: auto;
+}
+
+.homeBannerContainer {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BannerHead {
+    font-size: 55px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: -2px;
+    text-align: start;
+    line-height: 72px;
+}
+
+.BannerSubHead {
+    font-size: 23px;
+    font-weight: 400;
+    color: white;
+    text-align: start;
+    margin-top: 20px;
+}
+
+.bannerGetBtn {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: #0D4BAE;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600 !important;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.bannerGetBtn span {
+    text-align: center;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.getArrow {
+    background-color: #0D4BAE;
+    color: white;
+    padding: 12px 13px;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 17px;
+    margin-left: 30px;
+}
+
+.bannerGetBtn:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.BannerIcons {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px;
+
+}
+
+.BannerIcons i {
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+.BannerIcons i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.homeBannerContent {
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 0px;
+    height: 50px;
+    background-color: rgba(205, 109, 0, 0.141);
+    border-radius: 100px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    z-index: -1;
+}
+
+.bannerGetBtn:hover .overlay {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 136, 0, 0.384);
+    border-radius: 23px;
+}
+
+@media (max-width:991px) {
+    .homeBannerContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .BannerHead {
+        font-size: 50px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .BannerSubHead {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .BannerIcons {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .BannerBG {
+        background-image: linear-gradient(to right, #1C1BA3, #08BBE4);
+        height: auto;
+        width: 100%;
+    }
+
+    .BannerImage {
+        width: 70%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .BannerHead {
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 50px;
+    }
+}
+
+@media (max-width:576px) {
+    .BannerHead {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 40px;
+    }
+}

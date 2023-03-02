@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import kickrlogo from "../../Assests/KickrWhiteLogo.png";
 import Gallery1 from "../../Assests/Gallery1.jpg";
 import card from '../../Assests/payment Card.png'
-import "./footer.css";
+import "./Footer.css";
 import AOS from "aos";
 const Services = [{
   id:1,
@@ -137,6 +137,7 @@ const Footer = () => {
           <div className="serviceSec">
             <h5 className="footerHeading">Services</h5>
             <ul className="serviceList">
+
               {Services.map((item) => (
                 <li key={item.id}>
                   <a href={item.link}>
@@ -145,7 +146,6 @@ const Footer = () => {
                   </a>
                 </li>
               ))}
-
             </ul>
           </div>
         </div>
