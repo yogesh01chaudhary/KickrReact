@@ -3,6 +3,7 @@ import Navbar from '../Component/Navbar/Navbar'
 import Footer from '../Component/Footer/Footer'
 import BannerImage from "../Assests/BannerImage1.png"
 import './Home.css'
+import GetStart from '../Component/getStart/GetStart'
 
 export default function Home() {
   return (
@@ -23,9 +24,6 @@ export default function Home() {
                         <span>Get In Touch </span><i className="fa-solid fa-arrow-right getArrow"></i>
                         
                     </div>
-
-
-
                     <div className='BannerIcons'>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-facebook-f"></i>
@@ -39,6 +37,7 @@ export default function Home() {
             </div>
         </div>
     </div>
+    <GetStart />
 
     <Footer/>        
     </>
