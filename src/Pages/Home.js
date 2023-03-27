@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Component/Navbar/Navbar'
-import Footer from '../Component/Footer/Footer'
+import Footer from '../Component/footer/Footer'
 import BannerImage from "../Assests/BannerImage1.png"
 import './Home.css'
 import GetStart from '../Component/getStart/GetStart'
