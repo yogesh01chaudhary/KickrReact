@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import kickrlogo from "../../Assests/KickrWhiteLogo.png";
 import Gallery1 from "../../Assests/Gallery1.jpg";
 import card from '../../Assests/payment Card.png'
-import "./Footer.css";
+import "./footer.css";
 import AOS from "aos";
 const Services = [{
   id:1,
